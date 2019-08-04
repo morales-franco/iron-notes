@@ -1,4 +1,5 @@
-const API_BACKEND = "http://localhost:63180/api";
+// const API_BACKEND = "http://localhost:63180/api";
+const API_BACKEND = "http://190.210.151.241/IronNotes/api"
 
 var IronService = (function() {
   var login = function(user) {
