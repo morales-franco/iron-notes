@@ -4,7 +4,7 @@ const IMMUTABLE_CACHE = "immutable-cache-v1";
 
 //urls to cache - App shell with url own of our app - making for us
 const APP_SHELL = [
-  "/",
+  // "/",
   "index.html",
   "views/note.html",
   "css/style.css",
