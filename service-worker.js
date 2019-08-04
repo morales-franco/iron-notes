@@ -13,7 +13,7 @@ const APP_SHELL = [
   "js/app.js",
   "js/home.js",
   "js/note.js",
-  "favicon.ico"
+  "img/favicon.ico"
 ];
 
 //urls which never changes
