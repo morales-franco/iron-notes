@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iron Notes</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../js/libs/plugins/mdtoast.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="home.html">Iron -Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-id" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+
+        <div class="collapse navbar-collapse" id="menu-id">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../note.html?id=0">Create New Note</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="alert  alert-danger d-none" id="message-error-id">
+        <h4 class="alert-heading">Connection Error!</h4>
+        <p class="mb-0" id="message-error-text-id"></p>
+    </div>
+
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Note</legend>
+                <div class="form-group">
+                    <label for="title-id">Title</label>
+                    <input type="text" class="form-control" id="title-id" placeholder="Enter Title">
+                </div>
+                <div class="form-group">
+                    <label for="content-note-id">Content</label>
+                    <textarea class="form-control" id="content-note-id" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="onSave()">Submit</button>
+                <button type="button" class="btn btn-danger" onclick="onCancel()">Cancel</button>
+            </fieldset>
+        </form>
+
+
+
+    </div>
+
+    <script src="../js/libs/jquery.min.js"></script>
+    <script src="../js/libs/popper.min.js"></script>
+    <script src="../js/libs/bootstrap.min.js"></script>
+    <script src="../js/libs/plugins/mdtoast.min.js"></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/iron-service.js"></script>
+    <script src="../js/note.js"></script>
+    <script src="../js/service-worker-registration.js"></script>
+</body>
+
+</html>
