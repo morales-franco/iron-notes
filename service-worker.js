@@ -12,7 +12,8 @@ const APP_SHELL = [
   "js/iron-service.js",
   "js/app.js",
   "js/home.js",
-  "js/note.js"
+  "js/note.js",
+  "favicon.ico"
 ];
 
 //urls which never changes
